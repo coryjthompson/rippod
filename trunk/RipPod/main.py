@@ -171,7 +171,7 @@ class MainWindow(wx.App):
                     try:
                         musicFile = MP4(os.path.join(targetDir,current,f))
                                        #Song Title                #Artists                  #Album                   #File location
-                        musicFiles.append([musicFile.get("\xa9nam"), musicFile.get("\xa9ART"),  musicFile.get("\xa9alb"),os.path.join(targetDir,current,f)])
+                        musicFiles.append([musicFile.get("\xa9nam")[0], musicFile.get("\xa9ART")[0],  musicFile.get("\xa9alb")[0],os.path.join(targetDir,current,f)])
                     except:
                         continue
                         print "Fail"
