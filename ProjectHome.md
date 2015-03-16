@@ -1,0 +1,1 @@
+A python script to rip songs of an iPod and using the meta-data to keep nice filenames and folder structures.
